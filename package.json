@@ -5,6 +5,12 @@
     "start": "meteor run"
   },
   "dependencies": {
-    "meteor-node-stubs": "~0.2.0"
+    "jquery": "^2.2.4",
+    "mantra-core": "^1.6.1",
+    "material-ui": "^0.15.0",
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-tap-event-plugin": "^1.0.0"
   }
 }
