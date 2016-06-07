@@ -1,24 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import getMuiTheme from 'material-ui/styles/getMuiTheme';
-//import injectTapEventPlugin from 'react-tap-event-plugin';
-injectTapEventPlugin = require('react-tap-event-plugin');
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-import MyAwesomeReactComponent from './MyAwesomeReactComponent';
-//import jquery from 'jquery'
-j = require('jquery');
+/**
+ * Created by dengjing on 16/6/7.
+ */
 
-const App = () => (
-    <MuiThemeProvider muiTheme={getMuiTheme()}>
-        <MyAwesomeReactComponent />
-    </MuiThemeProvider>
-);
+import {createApp} from 'mantra-core';
+import initContext from './configs/context';
 
-Meteor.startup(function() {
-    injectTapEventPlugin();
-    console.log('??');
-    ReactDOM.render(
-        <App />,
-        j.document.getElementById('app')
-    );
-});
+// modules
+import testModule from './modules/test';
+
+// init context
+const context = initContext();
+
+// create app
+const app = createApp(context);
+app.loadModule(testModule);
+app.init();
