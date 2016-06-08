@@ -1,11 +1,11 @@
 import React from 'react';
 import {mount} from 'react-mounter';
 
-import TestLayout from './components/layout';
+import Layout from './components/layout';
 import Test from './containers/test';
 
 export default function (injectDeps, {FlowRouter}) {
-  const MainLayoutCtx = injectDeps(TestLayout);
+  const MainLayoutCtx = injectDeps(Layout);
 
   FlowRouter.route('/', {
     name: 'test',

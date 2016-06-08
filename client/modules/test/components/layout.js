@@ -5,11 +5,9 @@ const Layout = ({content = () => null }) => (
         <header>
             <h1>Mantra Voice</h1>
         </header>
-
         <div>
             {content()}
         </div>
-
         <footer>
             <small>Built with</small>
         </footer>
