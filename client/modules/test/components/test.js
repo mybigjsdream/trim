@@ -1,8 +1,9 @@
 import React from 'react';
 
+import AppBar from 'material-ui/AppBar';
+
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
-import AppBar from 'material-ui/AppBar';
 
 
 class Test extends React.Component {
@@ -12,9 +13,9 @@ class Test extends React.Component {
     }
 
     render() {
-        //const {post} = this.props;
         return (
             <div>
+                <div>haha</div>
                 <AppBar title="Title"/>
             </div>
         );

@@ -5,11 +5,10 @@
     "start": "meteor run"
   },
   "dependencies": {
-    "core-js": "^2.4.0",
     "jquery": "^2.2.4",
     "mantra-core": "^1.6.1",
     "material-ui": "^0.15.0",
-    "meteor-node-stubs": "~0.2.0",
+    "meteor-node-stubs": "^0.2.3",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
     "react-mounter": "^1.2.0",

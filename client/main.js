@@ -1,7 +1,3 @@
-/**
- * Created by dengjing on 16/6/7.
- */
-
 import {createApp} from 'mantra-core';
 import initContext from './configs/context';
 
