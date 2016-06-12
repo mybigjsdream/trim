@@ -2,7 +2,7 @@ import Base from '../components/base';
 import {useDeps, composeWithTracker, composeAll} from 'mantra-core';
 
 export const composer = ({context}, onData) => {
-    onData(null, 'aa');
+    onData(null, ' ');
 };
 
 export default composeAll(

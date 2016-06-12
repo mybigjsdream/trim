@@ -6,7 +6,7 @@ import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 
-class Footer extends React.Component {
+class Base extends React.Component {
 
     getChildContext() {
         return { muiTheme: getMuiTheme(baseTheme) };
@@ -23,8 +23,8 @@ class Footer extends React.Component {
 
 }
 
-Footer.childContextTypes = {
+Base.childContextTypes = {
     muiTheme: React.PropTypes.object.isRequired,
 };
 
-export default Footer;
+export default Base;
