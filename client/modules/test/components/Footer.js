@@ -15,7 +15,7 @@ class Footer extends React.Component {
     render() {
         return (
             <div>
-                <div>haha</div>
+                <div>deng</div>
                 <AppBar title="Title"/>
             </div>
         );

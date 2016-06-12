@@ -3,6 +3,7 @@ import {mount} from 'react-mounter';
 
 import Layout from './components/layout';
 import Test from './containers/test';
+import Footer from './containers/footer';
 
 export default function (injectDeps, {FlowRouter}) {
   const MainLayoutCtx = injectDeps(Layout);
@@ -11,7 +12,8 @@ export default function (injectDeps, {FlowRouter}) {
     name: 'test',
     action() {
       mount(MainLayoutCtx, {
-        content: () => (<Test />)
+        content: () => (<Test />),
+        footer: () => (<Footer />)
       });
     }
   });
