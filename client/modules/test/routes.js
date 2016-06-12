@@ -8,7 +8,7 @@ import Footer from './containers/footer';
 export default function (injectDeps, {FlowRouter}) {
   const MainLayoutCtx = injectDeps(Layout);
 
-  FlowRouter.route('/', {
+  FlowRouter.route('/test', {
     name: 'test',
     action() {
       mount(MainLayoutCtx, {
