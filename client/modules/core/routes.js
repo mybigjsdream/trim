@@ -7,7 +7,7 @@ import Base from './containers/base';
 export default function (injectDeps, {FlowRouter}) {
     const MainLayoutCtx = injectDeps(Layout);
 
-    FlowRouter.route('/', {
+    FlowRouter.route('/material', {
         name: 'core',
         action() {
             mount(MainLayoutCtx, {

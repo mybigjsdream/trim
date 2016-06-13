@@ -12,8 +12,34 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 class Base extends React.Component {
 
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            valueSingle: '3',
+        };
+    }
+
     getChildContext() {
         return { muiTheme: getMuiTheme(baseTheme) };
+    }
+
+    handleChangeSingle(event, value) {
+        this.setState({
+            valueSingle: value,
+        });
+    };
+
+    handleOnRequestChange(value) {
+        this.setState({
+            openMenu: value,
+        });
+    }
+
+    handleOpenMenu() {
+        this.setState({
+            openMenu: true,
+        });
     }
 
     render() {
@@ -28,17 +54,19 @@ class Base extends React.Component {
                     title="应用"
                     style={style}
                     iconElementRight={
-                      <IconMenu
-                          iconButtonElement={<IconButton><MoreVertIcon /></IconButton>}
-                          anchorOrigin={{horizontal: 'right', vertical: 'top'}}
-                          targetOrigin={{horizontal: 'right', vertical: 'top'}}
-                      >
-                          <MenuItem primaryText="Refresh" />
-                          <MenuItem primaryText="Help" />
-                          <MenuItem primaryText="Sign out" />
-                      </IconMenu>
+                        <IconMenu
+                            iconButtonElement={<IconButton><MoreVertIcon /></IconButton>}
+                            onChange={this.handleChangeSingle}
+                            value={this.state.valueSingle}
+                        >
+                            <MenuItem value="1" primaryText="Refresh" />
+                            <MenuItem value="2" primaryText="Send feedback" />
+                            <MenuItem value="3" primaryText="Settings" />
+                            <MenuItem value="4" primaryText="Help" />
+                            <MenuItem value="5" primaryText="Sign out" />
+                        </IconMenu>
                     }
-                />
+                    />
             </div>
         );
     }
