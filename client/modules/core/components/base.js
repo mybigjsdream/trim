@@ -1,9 +1,9 @@
 import React from 'react';
 
 import AppBar from 'material-ui/AppBar';
-import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
+import IconButton from 'material-ui/IconButton/IconButton';
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 
 import baseTheme from 'material-ui/styles/baseThemes/lightBaseTheme';
@@ -23,19 +23,23 @@ class Base extends React.Component {
             left: 0,
         };
         return (
+            <div>
                 <AppBar
                     title="应用"
                     style={style}
                     iconElementRight={
                       <IconMenu
                           iconButtonElement={<IconButton><MoreVertIcon /></IconButton>}
+                          anchorOrigin={{horizontal: 'right', vertical: 'top'}}
                           targetOrigin={{horizontal: 'right', vertical: 'top'}}
-                          anchorOrigin={{horizontal: 'right', vertical: 'top'}}>
+                      >
                           <MenuItem primaryText="Refresh" />
                           <MenuItem primaryText="Help" />
                           <MenuItem primaryText="Sign out" />
                       </IconMenu>
-                    }/>
+                    }
+                />
+            </div>
         );
     }
 
