@@ -5,6 +5,7 @@
     "start": "meteor run"
   },
   "dependencies": {
+    "antd": "^1.4.1",
     "jquery": "^2.2.4",
     "mantra-core": "^1.6.1",
     "material-ui": "^0.15.0",
