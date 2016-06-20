@@ -12,34 +12,8 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 
 class Base extends React.Component {
 
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            valueSingle: '3',
-        };
-    }
-
     getChildContext() {
         return { muiTheme: getMuiTheme(baseTheme) };
-    }
-
-    handleChangeSingle(event, value) {
-        this.setState({
-            valueSingle: value,
-        });
-    };
-
-    handleOnRequestChange(value) {
-        this.setState({
-            openMenu: value,
-        });
-    }
-
-    handleOpenMenu() {
-        this.setState({
-            openMenu: true,
-        });
     }
 
     render() {
@@ -56,8 +30,8 @@ class Base extends React.Component {
                     iconElementRight={
                         <IconMenu
                             iconButtonElement={<IconButton><MoreVertIcon /></IconButton>}
-                            onChange={this.handleChangeSingle}
-                            value={this.state.valueSingle}
+                            anchorOrigin={{horizontal: 'left', vertical: 'top'}}
+                            targetOrigin={{horizontal: 'left', vertical: 'top'}}
                         >
                             <MenuItem value="1" primaryText="Refresh" />
                             <MenuItem value="2" primaryText="Send feedback" />
