@@ -25,10 +25,10 @@ class Base extends React.Component {
         return (
             <div>
                 <AppBar
-                    title="应用"
+                    title="应用ABcde"
                     style={style}
                     iconElementRight={
-                        <IconMenu
+                        <IconMenu className="test"
                             iconButtonElement={<IconButton><MoreVertIcon /></IconButton>}
                             anchorOrigin={{horizontal: 'left', vertical: 'top'}}
                             targetOrigin={{horizontal: 'left', vertical: 'top'}}

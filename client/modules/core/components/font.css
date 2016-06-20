@@ -2,14 +2,12 @@
     font-family: 'Roboto';
     src: url('/roboto-fontfacekit/web fonts/Roboto-Thinltalic_macroman/Roboto-Thinltalic-webfont.eot');
     src: url('/roboto-fontfacekit/web fonts/Roboto-Thinltalic_macroman/Roboto-Thinltalic-webfont.eot?#iefix') format('embedded-opentype'),
-    /*url('/roboto-fontfacekit/web fonts/Roboto-Thinltalic_macroman/Roboto-Thinltalic-webfont.woff') format('woff'),*/
-    /*url('/roboto-fontfacekit/web fonts/Roboto-Thinltalic_macroman/Roboto-Thinltalic-webfont.ttf') format('truetype'),*/
     url('/roboto-fontfacekit/web fonts/Roboto-Thinltalic_macroman/Roboto-Thinltalic-webfont.svg#RobotoMediumItalic') format('svg');
     font-weight: 300;
     font-style: italic;
 }
 
-body {
+.test {
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 2rem;
