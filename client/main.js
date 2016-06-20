@@ -6,6 +6,8 @@ import testModule from './modules/test';
 import coreModule from './modules/core';
 //import antModule from './modules/ant';
 import bootstrapModule from './modules/bootstrap';
+import injectTapEventPlugin from 'react-tap-event-plugin';
+
 
 // init context
 const context = initContext();
@@ -16,4 +18,5 @@ app.loadModule(testModule);
 app.loadModule(coreModule);
 //app.loadModule(antModule);
 app.loadModule(bootstrapModule);
+injectTapEventPlugin();
 app.init();
