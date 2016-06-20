@@ -8,10 +8,6 @@ import coreModule from './modules/core';
 import bootstrapModule from './modules/bootstrap';
 import injectTapEventPlugin from 'react-tap-event-plugin';
 
-import initFont from './configs/font';
-
-initFont();
-
 // init context
 const context = initContext();
 
